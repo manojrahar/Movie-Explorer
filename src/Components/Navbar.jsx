@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
     <div className=' bg-teal-400 text-black p-5 flex justify-between font-bold text-xl'>
-        <NavLink to={'/'}>Movie App</NavLink>
+        <NavLink to={'/'}>Movie Explorer</NavLink>
         <div className='flex gap-10'>
           <NavLink to={'/'} style={({isActive}) => ({
             color: isActive ? 'red' : 'black',

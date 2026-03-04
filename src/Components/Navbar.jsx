@@ -7,12 +7,12 @@ const Navbar = () => {
         <NavLink to={'/'}>Movie Explorer</NavLink>
         <div className='flex gap-10'>
           <NavLink to={'/'} style={({isActive}) => ({
-            color: isActive ? 'red' : 'black',
-            fontSize: isActive ? '18px' : '15px',
+            color: isActive ? 'navy' : 'black',
+            fontSize: isActive ? '17px' : '15px',
           })}>Home</NavLink>
           <NavLink to={'/favorites'} style={({isActive}) => ({
-            color: isActive ? 'red' : 'black',
-            fontSize: isActive ? '18px' : '15px',
+            color: isActive ? 'navy' : 'black',
+            fontSize: isActive ? '17px' : '15px',
           })}>Favorites</NavLink>
         </div>  
         

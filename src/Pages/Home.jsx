@@ -40,8 +40,8 @@ const Home = () => {
   }, [searchQuery, page]);  
 
   return (
-    <div className="m-9 text-lg flex flex-col gap-5 justify-center items-center">
-      <form>
+    <div className="m-2 px-4 py-6 text-lg flex flex-col gap-5 justify-center items-center">
+        <form>
         <input
           type="text"
           placeholder="Search for movies..."
@@ -50,11 +50,11 @@ const Home = () => {
             setSearchQuery(e.target.value);
             setPage(1);
           }}
-          className="bg-white rounded-3xl px-7 py-2 mx-4"
+          className="bg-white rounded-3xl px-5 py-2 mx-4"
         />
         <button
           type="submit"
-          className="bg-teal-400 rounded-3xl px-6 py-2">
+          className="bg-teal-400 rounded-3xl px-5 py-2">
           Search
         </button>
       </form>
@@ -62,8 +62,8 @@ const Home = () => {
       {error && <div className="text-gray-300 text-3xl mt-10 font-bold">{error}</div>}
 
       {loading ? (
-        <div className="flex flex-wrap justify-center items-center">
-          { Array(8)
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 justify-items-center">
+          { Array(20)
           .fill()
           .map((_, index) => (
             <SkeletonCard key={index}/>
@@ -74,7 +74,7 @@ const Home = () => {
         <h2  className="text-gray-500 text-3xl mt-52 font-bold">No result found.</h2>
       )
       : (
-        <div className="flex flex-wrap justify-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 justify-items-center">
           {movies.map((movie) => (
             <MovieCard movie={movie} key={movie.id} />
           ))}

@@ -16,14 +16,18 @@ const MovieCard = ({movie}) => {
   }
 
   return (
-    <div className='m-4 w-60 h-[350px] text-center border border-gray-700 rounded-2xl overflow-hidden text-gray-400 hover:scale-105 duration-300 relative text-sm'>
-        <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" />
-        <div>
-          <p className='mt-2'>{movie.title}</p>
-          <p className='mb-1'>{movie.release_date?.split("-")[0]}</p>
+    <div className="w-full max-w-[180px] sm:max-w-[200px] text-center border border-gray-700 rounded-2xl overflow-hidden text-gray-400 hover:scale-105 duration-300 relative ">
+        <img
+          className="w-full h-[250px] object-fill"
+          src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+          alt=""
+        />
           <button onClick={onFavoriteClick}>  
             <Heart className='absolute top-2 right-2' fill={favorite ? 'red' : 'gray'}/>
           </button>
+        <div>
+          <p className='mt-2'>{movie.title}</p>
+          <p className='mb-1'>{movie.release_date?.split("-")[0]}</p>
         </div>
       </div>
   )

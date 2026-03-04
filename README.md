@@ -44,10 +44,10 @@ Deployment:
 # 📸 Screenshots
 
 ## Home Page
-![Home Page](screenshots/home.png)
+![Home Page](screenshot/home.png)
 
 ## Favorites Page
-![Favorites Page](screenshots/favorites.png)
+![Favorites Page](screenshot/favorites.png)
 
 ---
 

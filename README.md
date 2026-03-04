@@ -1,16 +1,134 @@
-# React + Vite
+# 🎬 Movie Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **React Movie Explorer App** that allows users to browse popular movies, search for movies, and save their favorite movies.
 
-Currently, two official plugins are available:
+This project uses **The Movie Database (TMDB) API** and demonstrates real-world frontend features like pagination, debounced search, favorites with local storage, and responsive UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌐 **Live Demo:** https://movie-explorer-m.vercel.app
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔍 **Search Movies** with debounce (auto search after typing)
+- 🎞 **Browse Popular Movies**
+- ❤️ **Add / Remove Favorites**
+- 💾 Favorites stored in **Local Storage**
+- 📄 **Pagination**
+- ⚡ **Skeleton Loading UI**
+- 📱 **Responsive Design** (mobile friendly)
+- 🌐 **API Integration with TMDB**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+# 🛠 Tech Stack
+
+Frontend:
+- React
+- Tailwind CSS
+- React Router
+
+State Management:
+- Context API
+
+API:
+- TMDB API
+
+Deployment:
+- Vercel
+
+---
+
+# 📸 Screenshots
+
+# 📸 Screenshots
+
+## Home Page
+![Home Page](screenshots/home.png)
+
+## Favorites Page
+![Favorites Page](screenshots/favorites.png)
+
+---
+
+# ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/manojrahar/Movie-Explorer.git
+```
+
+Go into the project directory
+
+```bash
+cd Movie-Explorer
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Create a `.env` file and add your TMDB API key
+
+```
+VITE_TMDB_API_KEY=your_api_key_here
+```
+
+Run the project
+
+```bash
+npm run dev
+```
+
+---
+
+# 📂 Project Structure
+
+```
+src
+ ├── Components
+ │   ├── MovieCard.jsx
+ │   ├── Navbar.jsx
+ │   ├── Pagination.jsx
+ │   └── SkeletonCard.jsx
+ │
+ ├── Context
+ │   └── MovieContext.jsx
+ │
+ ├── Pages
+ │   ├── Home.jsx
+ │   └── Favorites.jsx
+ │
+ └── services
+     └── api.js
+```
+
+---
+
+# 🧠 What I Learned
+
+- Building reusable React components
+- Managing global state using Context API
+- Implementing pagination with API data
+- Handling loading states with Skeleton UI
+- Making responsive layouts with Tailwind CSS
+- Deploying React applications on Vercel
+
+---
+
+# 🔗 Links
+
+GitHub Repository  
+https://github.com/manojrahar/Movie-Explorer
+
+---
+
+# 👨‍💻 Author
+
+**Manoj Rahar**
+
+Frontend Developer  
+Building in Public 🚀
